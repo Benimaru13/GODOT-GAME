@@ -12,10 +12,13 @@ config_version=5
 
 config/name="Daydream Game Project"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 run/main_scene="uid://bhddinsutnbvm"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://Srija's changes/Srija Scenes/icon.svg"
 =======
+=======
+>>>>>>> Stashed changes
 run/main_scene="uid://bktputmuq1fnt"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
