@@ -62,7 +62,7 @@ radius = 7.07107
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_0rwas")
 autoplay = "default"
-frame_progress = 0.885758
+frame_progress = 0.417506
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(0, 6)
