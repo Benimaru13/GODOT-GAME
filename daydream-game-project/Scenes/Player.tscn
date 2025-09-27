@@ -1,29 +1,29 @@
 [gd_scene load_steps=10 format=3 uid="uid://bhddinsutnbvm"]
 
-[ext_resource type="Texture2D" uid="uid://d1y100tbmej1g" path="res://assets/AnimationSheet_Character.png" id="1_xhfnw"]
+[ext_resource type="Texture2D" uid="uid://d1y100tbmej1g" path="res://assets/AnimationSheet_Character.png" id="1_rpqav"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kpjcp"]
-atlas = ExtResource("1_xhfnw")
+atlas = ExtResource("1_rpqav")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kne1u"]
-atlas = ExtResource("1_xhfnw")
+atlas = ExtResource("1_rpqav")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e80uo"]
-atlas = ExtResource("1_xhfnw")
+atlas = ExtResource("1_rpqav")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cxr5p"]
-atlas = ExtResource("1_xhfnw")
+atlas = ExtResource("1_rpqav")
 region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tdg3f"]
-atlas = ExtResource("1_xhfnw")
+atlas = ExtResource("1_rpqav")
 region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dtqjt"]
-atlas = ExtResource("1_xhfnw")
+atlas = ExtResource("1_rpqav")
 region = Rect2(32, 64, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0rwas"]
@@ -62,7 +62,7 @@ radius = 7.07107
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_0rwas")
 autoplay = "default"
-frame_progress = 0.343066
+frame_progress = 0.885758
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(0, 6)
