@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://wpmvgiy86gaw"]
+
+[ext_resource type="PackedScene" uid="uid://bhddinsutnbvm" path="res://Scenes/Player.tscn" id="1_f7cb8"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+position = Vector2(171, -65)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("1_f7cb8")]
+position = Vector2(304, 356)
