@@ -11,11 +11,15 @@ config_version=5
 [application]
 
 config/name="Daydream Game Project"
-run/main_scene="uid://cu08bc0ir6aug"
-config/features=PackedStringArray("4.5", "Mobile")
+run/main_scene="uid://bngwc3v65ju71"
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://Srija's changes/Srija Scenes/icon.svg"
 <<<<<<<Updatedupstreamrun/main_scene="uid://bhddinsutnbvm"
 <<<<<<<Updatedupstream<<<<<<<Updatedupstream<<<<<<<Updatedupstream<<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://bhddinsutnbvm"
+
+[autoload]
+
+GameManager="*res://game_manager.gd"
 
 [editor]
 

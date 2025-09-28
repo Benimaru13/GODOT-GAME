@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://bqpcl7hxj8klg"]
+
+[ext_resource type="Texture2D" uid="uid://cumewx37xr28w" path="res://assets/AnimatedPotions 16x16/Life/Potion.png" id="1_flfaj"]
+[ext_resource type="Script" uid="uid://bget5uqu4e2eu" path="res://Scripts/potions script.gd" id="1_p6qtx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6qtx"]
+atlas = ExtResource("1_flfaj")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0y31"]
+atlas = ExtResource("1_flfaj")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crer0"]
+atlas = ExtResource("1_flfaj")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgxv5"]
+atlas = ExtResource("1_flfaj")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ed8fq"]
+atlas = ExtResource("1_flfaj")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbtds"]
+atlas = ExtResource("1_flfaj")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x2mdr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6qtx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n0y31")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crer0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bgxv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ed8fq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbtds")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h8ld4"]
+size = Vector2(6.875, 10.75)
+
+[node name="Potion" type="Node2D"]
+
+[node name="potion" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("1_p6qtx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="potion"]
+sprite_frames = SubResource("SpriteFrames_x2mdr")
+autoplay = "default"
+frame_progress = 0.581452
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="potion"]
+position = Vector2(-0.4375, 2.375)
+shape = SubResource("RectangleShape2D_h8ld4")
+
+[connection signal="body_entered" from="potion" to="potion" method="_on_body_entered"]
