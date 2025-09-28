@@ -4,10 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://bqko4ovkdeanf" path="res://assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_wmaeb"]
 [ext_resource type="PackedScene" uid="uid://b4ike56y06flu" path="res://Srija's changes/Srija Scenes/platform - anim.tscn" id="2_wh2pt"]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" path="res://Scenes/Player.tscn" id="3_wh2pt"]
 [ext_resource type="Script" uid="uid://bjme3rmb1et7v" path="res://Srija's changes/Srija Scenes/area_2d.gd" id="4_olmbn"]
 [ext_resource type="Texture2D" uid="uid://b6cminbj60pd4" path="res://assets/istockphoto-1317255877-612x612.jpg" id="6_8e22e"]
 [ext_resource type="PackedScene" uid="uid://bbkr1fyxfetk0" path="res://Srija's changes/Srija Scenes/testing node.tscn" id="7_qapv0"]
+=======
+[ext_resource type="PackedScene" uid="uid://dbgigrl7oqjyl" path="res://Scenes/Player.tscn" id="3_wh2pt"]
+[ext_resource type="Script" path="res://Srija's changes/Srija Scenes/area_2d.gd" id="4_olmbn"]
+>>>>>>> Stashed changes
 =======
 [ext_resource type="PackedScene" uid="uid://dbgigrl7oqjyl" path="res://Scenes/Player.tscn" id="3_wh2pt"]
 [ext_resource type="Script" path="res://Srija's changes/Srija Scenes/area_2d.gd" id="4_olmbn"]
@@ -403,6 +408,7 @@ script = ExtResource("4_olmbn")
 next_scene = ExtResource("7_qapv0")
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(954, 405)
 shape = SubResource("RectangleShape2D_wmaeb")
@@ -435,6 +441,14 @@ shape = SubResource("RectangleShape2D_esurj")
 [connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Node2D/Sprite2D/Area2D" to="Node2D/Sprite2D/Area2D" method="_on_body_entered"]
+=======
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lava"]
+position = Vector2(-579, 61)
+shape = SubResource("RectangleShape2D_wmaeb")
+
+[connection signal="area_entered" from="Lava" to="Lava" method="_on_area_entered"]
+[connection signal="body_entered" from="Lava" to="Lava" method="_on_body_entered"]
+>>>>>>> Stashed changes
 =======
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lava"]
 position = Vector2(-579, 61)
